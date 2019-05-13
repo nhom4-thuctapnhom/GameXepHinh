@@ -29,5 +29,13 @@ namespace game_xep_hinh
         {
             this.Show();
         }
+
+        private void btnRanking_Click(object sender, EventArgs e)
+        {
+            FormXepHang frmXepHang = new FormXepHang();
+            frmXepHang.FormClosed += new FormClosedEventHandler(frm_FormClosed);
+            frmXepHang.Show();
+            this.Hide();
+        }
     }
 }
