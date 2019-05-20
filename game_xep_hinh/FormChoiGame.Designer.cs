@@ -167,7 +167,7 @@
             // 
             // pbMain
             // 
-            this.pbMain.BackgroundImage = global::game_xep_hinh.Properties.Resources.Luffyyyy;
+            this.pbMain.BackgroundImage = global::game_xep_hinh.Properties.Resources.Untitled_1;
             this.pbMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbMain.Location = new System.Drawing.Point(372, 100);
             this.pbMain.Name = "pbMain";
