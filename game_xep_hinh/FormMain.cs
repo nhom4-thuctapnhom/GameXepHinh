@@ -37,5 +37,10 @@ namespace game_xep_hinh
             frmXepHang.Show();
             this.Hide();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
