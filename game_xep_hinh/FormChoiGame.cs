@@ -34,10 +34,15 @@ namespace game_xep_hinh
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void pb4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb1_Click(object sender, EventArgs e)
         {
 
         }

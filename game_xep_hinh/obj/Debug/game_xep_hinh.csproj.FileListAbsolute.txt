@@ -51,3 +51,14 @@ C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.FormMa
 C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.FormXepHang.resources
 C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.Properties.Resources.resources
 C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\game_xep_hinh.exe.config
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.exe
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.pdb
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\game_xep_hinh.exe
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\game_xep_hinh.pdb
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.FormChoiGame.resources
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.FormMain.resources
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.FormXepHang.resources
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csproj.GenerateResource.Cache
