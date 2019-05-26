@@ -69,7 +69,6 @@
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Điểm:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -114,7 +113,6 @@
             this.label3.Size = new System.Drawing.Size(77, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Thời gian:";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbThoiGian
             // 
@@ -150,7 +148,6 @@
             this.btnTroChoiMoi.TabIndex = 2;
             this.btnTroChoiMoi.Text = "Trò chơi mới";
             this.btnTroChoiMoi.UseVisualStyleBackColor = false;
-            this.btnTroChoiMoi.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnThoat
             // 
@@ -163,7 +160,6 @@
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // pbMain
             // 
@@ -253,7 +249,6 @@
             this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4.TabIndex = 0;
             this.pb4.TabStop = false;
-            this.pb4.Click += new System.EventHandler(this.pb4_Click);
             // 
             // pb2
             // 
@@ -276,7 +271,6 @@
             this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
-            this.pb1.Click += new System.EventHandler(this.pb1_Click);
             // 
             // FormChoiGame
             // 
