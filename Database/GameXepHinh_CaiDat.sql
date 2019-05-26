@@ -6,7 +6,7 @@ on primary
   size = 8
   ,filegrowth = 64
   ,maxsize = 1000
-  ,filename =  'D:\GameXepHinh\Database\GameXepHinh.mdf'
+  ,filename =  'E:\GameXepHinh\Database\GameXepHinh.mdf'
   ,name = GameXepHinh
 )
 log on 
@@ -14,7 +14,7 @@ log on
   size = 8
   ,filegrowth = 64
   ,maxsize = 1000
-  ,filename = 'D:\GameXepHinh\Database\GameXepHinh.ldf'
+  ,filename = 'E:\GameXepHinh\Database\GameXepHinh.ldf'
   ,name = GameXepHinh_log
 )
 go
