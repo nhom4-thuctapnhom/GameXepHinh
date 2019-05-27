@@ -78,3 +78,7 @@ E:\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csproj.GenerateResource.cac
 E:\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csproj.CoreCompileInputs.cache
 E:\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.exe
 E:\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.pdb
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.Designer.cs
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsc
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsd
+C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xss
