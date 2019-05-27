@@ -82,3 +82,7 @@ C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHi
 C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsc
 C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsd
 C:\Users\Administrator\Desktop\Git\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xss
+C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.Designer.cs
+C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsc
+C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xsd
+C:\Users\DuyBao\Desktop\GameXepHinh\game_xep_hinh\bin\Debug\GameXepHinhDataSet.xss

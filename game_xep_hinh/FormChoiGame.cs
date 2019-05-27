@@ -40,7 +40,7 @@ namespace game_xep_hinh
             Time = 0;
             Level = 0;
             initArr();
-            pbMain.Image = game_xep_hinh.Properties.Resources.Luffyyyy;
+            pbMain.Image = game_xep_hinh.Properties.Resources.Untitled_1;
         }
 
         public int getVT(int x, int y)
@@ -80,15 +80,6 @@ namespace game_xep_hinh
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        private void pb1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void FormChoiGame_Load(object sender, EventArgs e)
@@ -131,7 +122,7 @@ namespace game_xep_hinh
             {
                 int temp = Arr[getVT(x, y)];
                 Arr[getVT(x, y)] = Arr[getVT(x, y - 1)];
-                Arr[getVT(x + 1, y - 1)] = temp;
+                Arr[getVT(x, y - 1)] = temp;
 
                 y--;
                 Diem++;
@@ -154,14 +145,9 @@ namespace game_xep_hinh
         }
 
         Random rd = new Random();
-
-        private void pb9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void setmap()
         {
+            //Xáo trộn 200 lần 
             for (int i = 0; i < 200; i++)
             {
                 int rdn = rd.Next(1, 5); //Trả về từ 1 - 4
