@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbDiem = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@
             this.pb4 = new System.Windows.Forms.PictureBox();
             this.pb2 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
+            this.btnHoanThanhNhanh = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
@@ -143,6 +146,8 @@
             this.btnTamDung.TabIndex = 2;
             this.btnTamDung.Text = "Tạm dừng";
             this.btnTamDung.UseVisualStyleBackColor = false;
+            this.btnTamDung.Click += new System.EventHandler(this.btnTamDung_Click);
+            this.btnTamDung.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnTamDung_KeyUp);
             // 
             // btnTroChoiMoi
             // 
@@ -156,6 +161,8 @@
             this.btnTroChoiMoi.TabIndex = 2;
             this.btnTroChoiMoi.Text = "Trò chơi mới";
             this.btnTroChoiMoi.UseVisualStyleBackColor = false;
+            this.btnTroChoiMoi.Click += new System.EventHandler(this.btnTroChoiMoi_Click);
+            this.btnTroChoiMoi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnTamDung_KeyUp);
             // 
             // btnThoat
             // 
@@ -170,6 +177,7 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnThoat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnTamDung_KeyUp);
             // 
             // pbMain
             // 
@@ -282,12 +290,33 @@
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
             // 
+            // btnHoanThanhNhanh
+            // 
+            this.btnHoanThanhNhanh.BackColor = System.Drawing.Color.Aquamarine;
+            this.btnHoanThanhNhanh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHoanThanhNhanh.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoanThanhNhanh.Location = new System.Drawing.Point(33, 500);
+            this.btnHoanThanhNhanh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHoanThanhNhanh.Name = "btnHoanThanhNhanh";
+            this.btnHoanThanhNhanh.Size = new System.Drawing.Size(416, 49);
+            this.btnHoanThanhNhanh.TabIndex = 3;
+            this.btnHoanThanhNhanh.Text = "Hoàn thành nhanh";
+            this.btnHoanThanhNhanh.UseVisualStyleBackColor = false;
+            this.btnHoanThanhNhanh.Click += new System.EventHandler(this.btnHoanThanhNhanh_Click);
+            this.btnHoanThanhNhanh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnTamDung_KeyUp);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormChoiGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(912, 507);
+            this.ClientSize = new System.Drawing.Size(912, 582);
+            this.Controls.Add(this.btnHoanThanhNhanh);
             this.Controls.Add(this.btnTroChoiMoi);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnTamDung);
@@ -347,6 +376,8 @@
         private System.Windows.Forms.Button btnTamDung;
         private System.Windows.Forms.Button btnTroChoiMoi;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnHoanThanhNhanh;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

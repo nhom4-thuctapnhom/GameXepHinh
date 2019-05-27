@@ -41,6 +41,9 @@ namespace game_xep_hinh
             Level = 0;
             initArr();
             pbMain.Image = game_xep_hinh.Properties.Resources.Untitled_1;
+            lbDiem.Text = "0";
+            lbThoiGian.Text = (Time / 60).ToString() + " phút : " + (Time % 60).ToString() + " giây";
+            timer1.Start();
         }
 
         public int getVT(int x, int y)
@@ -86,6 +89,9 @@ namespace game_xep_hinh
         {
             init();
             setmap();
+            lbDiem.Text = "0";
+            lbMucChoi.Text = "Dễ";
+            timer1.Start();
         }
 
         public void go_Left()
@@ -145,6 +151,55 @@ namespace game_xep_hinh
         }
 
         Random rd = new Random();
+
+        private void btnTamDung_Click(object sender, EventArgs e)
+        {
+            if (TT_Game == true)
+            {
+                TT_Game = false;
+                btnTamDung.Text = "Chơi tiếp";
+                timer1.Stop();
+            }
+            else
+            {
+                TT_Game = true;
+                btnTamDung.Text = "Tạm dừng";
+                timer1.Start();
+            }
+        }
+
+        private void btnTroChoiMoi_Click(object sender, EventArgs e)
+        {
+            TT_Game = true;
+            btnTamDung.Text = "Tạm dừng";
+            init();
+            setmap();
+        }
+
+        private void btnHoanThanhNhanh_Click(object sender, EventArgs e)
+        {
+            pb1.Image = game_xep_hinh.Properties.Resources.Anh1;
+            pb2.Image = game_xep_hinh.Properties.Resources.Anh2;
+            pb3.Image = game_xep_hinh.Properties.Resources.Anh3;
+            pb4.Image = game_xep_hinh.Properties.Resources.Anh4;
+            pb5.Image = game_xep_hinh.Properties.Resources.Anh5;
+            pb6.Image = game_xep_hinh.Properties.Resources.Anh6;
+            pb7.Image = game_xep_hinh.Properties.Resources.Anh7;
+            pb8.Image = game_xep_hinh.Properties.Resources.Anh8;
+            pb9.Image = null; pb9.BackColor = Color.White;
+
+            timer1.Stop();
+            MessageBox.Show("Bạn đã thắng..... Thời gian: " + lbThoiGian.Text, "Congratulation!!!", MessageBoxButtons.OK);
+            init();
+            setmap();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Time++;
+            lbThoiGian.Text = (Time / 60).ToString() + " phút : " + (Time % 60).ToString() + " giây";
+        }
+
         private void setmap()
         {
             //Xáo trộn 200 lần 
@@ -166,6 +221,50 @@ namespace game_xep_hinh
             x = 2;
             y = 2;
             showpb();
+        }
+
+        private void btnTamDung_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (TT_Game == true)
+            {
+                if (e.KeyCode == Keys.Left)
+                {
+                    go_Right(); //sang phải
+                }
+                else if (e.KeyCode == Keys.Right)
+                {
+                    go_Left(); //sang trái
+                }
+                else if (e.KeyCode == Keys.Up)
+                {
+                    go_bottom(); //xuống dưới
+                }
+                else if (e.KeyCode == Keys.Down)
+                {
+                    go_top(); //lên trên
+                }
+            }
+
+            if (check_win() == true)
+            {
+                timer1.Stop();
+                MessageBox.Show("Bạn đã thắng..... Thời gian: ", "Congratulation!!!", MessageBoxButtons.OK);
+                init();
+                setmap();
+            }
+            lbDiem.Text = Diem.ToString();
+        }
+        
+        public bool check_win()
+        {
+            for (int i = 1; i <= 9; i++)
+            {
+                if (Arr[i - 1] != i)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
     }
