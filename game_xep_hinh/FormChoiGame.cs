@@ -165,6 +165,7 @@ namespace game_xep_hinh
 
             x = 2;
             y = 2;
+            showpb();
         }
 
     }
