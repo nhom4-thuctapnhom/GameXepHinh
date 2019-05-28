@@ -41,7 +41,7 @@ create table MUCDO
 create table THONGKE
 (
 	ID int,
-	ThoiGian int,
+	ThoiGian nvarchar(50),
 	SoLanThaoTac int,
 	IDMucDo nchar(20),
 	primary key (ID, IDMucDo),
@@ -49,3 +49,30 @@ create table THONGKE
 	constraint TK_IDMucDo_FK foreign key (IDMucDo) references dbo.MUCDO(IDMucDo)
 )
 /*=====================================================*/
+
+insert into dbo.MUCDO(IDMucDo, MucDo)
+values	(1, 'Dễ'),
+		(2, 'Trung bình'),
+		(3, 'Khó');
+		
+insert into dbo.NGUOICHOI (ID, Ten)
+values	(1, 'Bao'),
+		(2, 'Hoan'),
+		(3, 'Diep'),
+		(4, 'Cuong'),
+		(5, 'Cong'),
+		(6, 'Thuy'),
+		(7, 'Viet'),
+		(8, 'Trong'),
+		(9, 'Tuan');
+
+insert into dbo.THONGKE (ID, ThoiGian, SoLanThaoTac, IDMucDo)
+values	(1, '4 phút : 12 giây',	315, 1),
+		(2, '5 phút : 27 giây',	423, 1),
+		(3, '3 phút : 55 giây',	256, 1),
+		(4, '4 phút : 23 giây',	297, 1),
+		(5, '5 phút : 06 giây',	333, 1),
+		(6, '7 phút : 12 giây',	500, 1),
+		(7, '10 phút : 34 giây', 928, 1),
+		(8, '2 phút : 10 giây',	183, 1),
+		(9, '3 phút : 18 giây',	254, 1);
