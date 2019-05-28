@@ -87,7 +87,6 @@ namespace game_xep_hinh
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            player.Stop();
             this.Close();
         }
 

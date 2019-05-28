@@ -132,3 +132,6 @@ C:\Users\Handles\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.cspro
 C:\Users\Handles\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.csproj.CoreCompileInputs.cache
 C:\Users\Handles\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.exe
 C:\Users\Handles\Desktop\GameXepHinh\game_xep_hinh\obj\Debug\game_xep_hinh.pdb
+E:\GameXepHinh\game_xep_hinh\bin\Debug\FormChoiGame.resx
+E:\GameXepHinh\game_xep_hinh\bin\Debug\FormChoiGame.cs
+E:\GameXepHinh\game_xep_hinh\bin\Debug\FormChoiGame.Designer.cs
