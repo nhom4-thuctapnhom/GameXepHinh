@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace game_xep_hinh
 {
     public partial class FormChoiGame : Form
     {
+        private SoundPlayer player;
+
         public FormChoiGame()
         {
             InitializeComponent();
+            player = new SoundPlayer("Nhac-Game-Cover (online-audio-converter.com).wav");
         }
 
         public int x, y;
@@ -92,6 +96,7 @@ namespace game_xep_hinh
             lbDiem.Text = "0";
             lbMucChoi.Text = "Dễ";
             timer1.Start();
+            player.Play();
         }
 
         public void go_Left()
@@ -254,7 +259,26 @@ namespace game_xep_hinh
             }
             lbDiem.Text = Diem.ToString();
         }
-        
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(ckbnhac.Checked)
+            {
+                ckbnhac.Text = "Bật nhạc";
+                player.Stop();
+            }
+            else
+            {
+                ckbnhac.Text = "Tắt nhạc";
+                player.Play();
+            }
+        }
+
+        private void lbThoiGian_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public bool check_win()
         {
             for (int i = 1; i <= 9; i++)
