@@ -87,6 +87,7 @@ namespace game_xep_hinh
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            player.Stop();
             this.Close();
         }
 
@@ -165,12 +166,14 @@ namespace game_xep_hinh
                 TT_Game = false;
                 btnTamDung.Text = "Chơi tiếp";
                 timer1.Stop();
+                player.Stop();
             }
             else
             {
                 TT_Game = true;
                 btnTamDung.Text = "Tạm dừng";
                 timer1.Start();
+                player.Play();
             }
         }
 
@@ -198,8 +201,16 @@ namespace game_xep_hinh
 
             timer1.Stop();
             MessageBox.Show("Bạn đã thắng..... Thời gian: " + lbThoiGian.Text, "Congratulation!!!", MessageBoxButtons.OK);
-            init();
-            setmap();
+            if (MessageBox.Show("Bạn có muốn tiếp tục?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                init();
+                setmap();
+            }
+            else
+            {
+                player.Stop();
+                this.Close();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -211,7 +222,7 @@ namespace game_xep_hinh
         private void setmap()
         {
             //Xáo trộn 200 lần 
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 50; i++)
             {
                 int rdn = rd.Next(1, 5); //Trả về từ 1 - 4
                 switch (rdn)
