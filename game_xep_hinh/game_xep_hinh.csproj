@@ -68,6 +68,7 @@
     <Compile Include="Database\MucDoData.cs" />
     <Compile Include="Database\NguoiChoiData.cs" />
     <Compile Include="Database\ThongKeData.cs" />
+    <Compile Include="DataConnection.cs" />
     <Compile Include="Entities\MucDo.cs" />
     <Compile Include="Entities\NguoiChoi.cs" />
     <Compile Include="Entities\ThongKe.cs" />
