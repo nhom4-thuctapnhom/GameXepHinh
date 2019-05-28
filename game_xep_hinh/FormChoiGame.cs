@@ -276,9 +276,17 @@ namespace game_xep_hinh
             {
                 timer1.Stop();
                 
-                MessageBox.Show("Bạn đã thắng..... Thời gian: ", "Congratulation!!!", MessageBoxButtons.OK);
-                init();
-                setmap();
+                MessageBox.Show("Bạn đã thắng..... Thời gian: " + lbThoiGian.Text, "Congratulation!!!", MessageBoxButtons.OK);
+                if (MessageBox.Show("Bạn có muốn tiếp tục?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    init();
+                    setmap();
+                }
+                else
+                {
+                    player.Stop();
+                    this.Close();
+                }
             }
             lbSoLanTT.Text = soLanThaoTac.ToString();
         }
